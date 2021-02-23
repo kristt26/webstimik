@@ -84,16 +84,23 @@ class Video extends CI_Controller {
 
         }
         //load the error and success messages
-        $data['errors'] = $this->error;
-        $data['success'] = $this->success;
-        $data['menu'] = 'admin/side_admin';
-        $data['content'] = 'admin/view_video';
-        $data['judul'] = 'master';
-        $data['sub_judul'] = 'video';
-        $data['data'] = $this->db->get('video');
-        //load the view along with data
-        $this->load->view('admin/home_view',$data);
-     //   redirect('admin/video');
+        $result['errors'] = $this->error;
+        $result['success'] = $this->success;
+        $result['title'] = "Video";
+        $result['breadcrumb'] = "Video";
+        // $result['subtitle'] = "Testing";
+        $isi['data'] = $this->db->get('video');
+        $result['content'] = $this->load->view('admin/view_video', $isi, true);
+        $this->load->view('template/admin', $result);
+
+        // $data['errors'] = $this->error;
+        // $data['success'] = $this->success;
+        // $data['menu'] = 'admin/side_admin';
+        // $data['content'] = 'admin/view_video';
+        // $data['judul'] = 'master';
+        // $data['sub_judul'] = 'video';
+        // $data['data'] = $this->db->get('video');
+        // $this->load->view('admin/home_view',$data);
     }
 
     public function updateVideo($id)

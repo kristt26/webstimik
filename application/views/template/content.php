@@ -46,6 +46,7 @@
 	<!-- STYLESHEETS ============================================= -->
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/assets/css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="<?=base_url()?>assets/assets/css/color/color-1.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/orgchart/3.1.1/css/jquery.orgchart.min.css" integrity="sha512-bCaZ8dJsDR+slK3QXmhjnPDREpFaClf3mihutFGH+RxkAcquLyd9iwewxWQuWuP5rumVRl7iGbSDuiTvjH1kLw==" crossorigin="anonymous" /> -->
 
 </head>
 
@@ -61,7 +62,7 @@
 						<div class="topbar-left">
 							<ul>
 								<!-- <li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li> -->
-								<li><a href="webmail.stimiksepnop.ac.id"><i
+								<li><a href="http://webmail.stimiksepnop.ac.id" target="_blank"><i
 											class="fa fa-envelope-o"></i>kampus_ti@stimiksepnop.ac.id.com</a></li>
 							</ul>
 						</div>
@@ -73,7 +74,7 @@
 									<option data-icon="flag flag-us">English US</option>
 								</select>
 							</li> -->
-								<li><a href="login.html">Login</a></li>
+								<li><a href="<?=base_url('login')?>">Login</a></li>
 								<!-- <li><a href="register.html">Register</a></li> -->
 							</ul>
 						</div>
@@ -132,15 +133,15 @@
 								<li><a href="javascript:;">Tentang STIMIK <i class="fa fa-chevron-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="<?=base_url('content?set=sejarah')?>">Sejarah</a></li>
-										<li><a href="#">Visi Misi dan Tujuan</a></li>
-										<li><a href="#">Struktur Organsiasi</a></li>
+										<li><a href="<?=base_url('content?set=visimisi')?>">Visi Misi dan Tujuan</a></li>
+										<li><a href="<?=base_url('content?set=struktur')?>">Struktur Organsiasi</a></li>
 									</ul>
 								</li>
 								<li><a href="javascript:;">Akademik <i class="fa fa-chevron-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="javascript:;">Program Studi<i class="fa fa-angle-right"></i></a>
 											<ul class="sub-menu">
-												<li><a href="#">Teknik Informatika</a></li>
+												<li><a href="https://ti.stimiksepnop.ac.id" target="_blank">Teknik Informatika</a></li>
 												<li><a href="#">Sistem Informasi</a></li>
 											</ul>
 										</li>
@@ -148,7 +149,7 @@
 										<li><a href="#">Dosen</a></li>
 									</ul>
 								</li>
-								<li><a href="javascript:;">PMB</a></li>
+								<li><a href="<?=base_url('pendaftaran/form')?>" target="_blank">Pendaftaran</a></li>
 								<li><a href="javascript:;">Directory</a></li>
 								<li><a href="javascript:;">Hubungi Kami</a></li>
 							</ul>
@@ -287,7 +288,7 @@ echo $this->mylib->hariIndo(date_format($tanggal, "l")) . ', ' . date_format($ta
 								</ul>
 							</div>
 							<div class="pt-btn-join">
-								<a href="#" class="btn ">Join Now</a>
+								<a href="<?=base_url('pendaftaran/form')?>" class="btn" target="_blank">Join Now</a>
 							</div>
 						</div>
 					</div>
@@ -299,6 +300,12 @@ echo $this->mylib->hariIndo(date_format($tanggal, "l")) . ', ' . date_format($ta
 	</div>
 	<!-- External JavaScripts -->
 	<script src="<?=base_url()?>assets/assets/js/jquery.min.js"></script>
+	<script src="<?=base_url()?>public/plugins/angular/angular.min.js"></script>
+	<script src="<?=base_url()?>public/js/apps.js"></script>
+	<script src="<?=base_url()?>public/js/services/helper.services.js"></script>
+	<script src="<?=base_url()?>public/js/services/auth.services.js"></script>
+	<script src="<?=base_url()?>public/js/services/services.js"></script>
+	<script src="<?=base_url()?>public/js/controllers/admin.controllers.js"></script>
 	<script src="<?=base_url()?>assets/assets/vendors/bootstrap/js/popper.min.js"></script>
 	<script src="<?=base_url()?>assets/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 	<script src="<?=base_url()?>assets/assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
@@ -313,6 +320,16 @@ echo $this->mylib->hariIndo(date_format($tanggal, "l")) . ', ' . date_format($ta
 	<script src="<?=base_url()?>assets/assets/js/functions.js"></script>
 	<script src="<?=base_url()?>assets/assets/js/contact.js"></script>
 	<script src='<?=base_url()?>assets/assets/vendors/switcher/switcher.js'></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/orgchart/3.1.1/js/jquery.orgchart.min.js" integrity="sha512-alnBKIRc2t6LkXj07dy2CLCByKoMYf2eQ5hLpDmjoqO44d3JF8LSM4PptrgvohTQT0LzKdRasI/wgLN0ONNgmA==" crossorigin="anonymous"></script> -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/sankey.js"></script>
+	<script src="https://code.highcharts.com/modules/organization.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
+	<?php if($this->input->get('set')=='struktur'):?>
+		<script src="<?=base_url()?>public/js/scripting.js"></script>
+	<?php endif;?>
 </body>
 
 </html>

@@ -3,6 +3,7 @@ angular.module('adminctrl', [])
     .controller('userController', userController)
     .controller('beritaController', beritaController)
     .controller('tambahBeritaController', tambahBeritaController)
+    .controller('galeryController', galeryController)
     .controller('laporanController', laporanController)
     ;
 function homeController($scope) {
@@ -74,6 +75,12 @@ function beritaController($scope) {
 
 function tambahBeritaController($scope) {
     $scope.itemHeader = { title: "Home", breadcrumb: "Home", header: "Home" };
+    $scope.$emit("SendUp", $scope.itemHeader);
+    $.LoadingOverlay("hide");
+}
+
+function galeryController($scope) {
+    $scope.itemHeader = { title: "Galery", breadcrumb: "Galery", header: "Galery" };
     $scope.$emit("SendUp", $scope.itemHeader);
     $.LoadingOverlay("hide");
 }

@@ -65,7 +65,7 @@
 						<div class="topbar-left">
 							<ul>
 								<!-- <li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li> -->
-								<li><a href="http://webmail.stimiksepnop.ac.id/"><i
+								<li><a href="http://webmail.stimiksepnop.ac.id/" target="_blank"><i
 											class="fa fa-envelope-o"></i>kampus_ti@stimiksepnop.ac.id</a></li>
 							</ul>
 						</div>
@@ -139,15 +139,15 @@
 								<li><a href="javascript:;">Tentang STIMIK <i class="fa fa-chevron-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="<?=base_url('content?set=sejarah')?>">Sejarah</a></li>
-										<li><a href="#">Visi Misi dan Tujuan</a></li>
-										<li><a href="#">Struktur Organsiasi</a></li>
+										<li><a href="<?=base_url('content?set=visimisi')?>">Visi Misi dan Tujuan</a></li>
+										<li><a href="<?=base_url('content?set=struktur')?>">Struktur Organsiasi</a></li>
 									</ul>
 								</li>
 								<li><a href="javascript:;">Akademik <i class="fa fa-chevron-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="javascript:;">Program Studi<i class="fa fa-angle-right"></i></a>
 											<ul class="sub-menu">
-												<li><a href="#">Teknik Informatika</a></li>
+												<li><a href="https://ti.stimiksepnop.ac.id" target="_blank">Teknik Informatika</a></li>
 												<li><a href="#">Sistem Informasi</a></li>
 											</ul>
 										</li>
@@ -155,33 +155,9 @@
 										<li><a href="#">Dosen</a></li>
 									</ul>
 								</li>
-								<li><a href="javascript:;">PMB</a></li>
+								<li><a href="<?=base_url('pendaftaran/form')?>" target="_blank">Pendaftaran</a></li>
 								<li><a href="javascript:;">Directory</a></li>
 								<li><a href="javascript:;">Hubungi Kami</a></li>
-								<!-- <li class="add-mega-menu"><a href="javascript:;">Our Courses <i class="fa fa-chevron-down"></i></a>
-								<ul class="sub-menu add-menu">
-									<li class="add-menu-left">
-										<h5 class="menu-adv-title">Our Courses</h5>
-										<ul>
-											<li><a href="courses.html">Courses </a></li>
-											<li><a href="courses-details.html">Courses Details</a></li>
-											<li><a href="profile.html">Instructor Profile</a></li>
-											<li><a href="event.html">Upcoming Event</a></li>
-											<li><a href="membership.html">Membership</a></li>
-										</ul>
-									</li>
-									<li class="add-menu-left">
-										<h5 class="menu-adv-title">Our Courses</h5>
-										<ul>
-											<li><a href="courses.html">Courses </a></li>
-											<li><a href="courses-details.html">Courses Details</a></li>
-											<li><a href="profile.html">Instructor Profile</a></li>
-											<li><a href="event.html">Upcoming Event</a></li>
-											<li><a href="membership.html">Membership</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li> -->
 							</ul>
 							<div class="nav-social-link">
 								<a href="javascript:;"><i class="fa fa-facebook"></i></a>
@@ -270,58 +246,6 @@
 			</div>
 			<!-- Main Slider -->
 			<div class="content-block">
-
-				<!-- Our Services -->
-				<!-- <div class="section-area content-inner service-info-bx">
-                <div class="container">
-					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="service-bx">
-								<div class="action-box">
-									<img src="<?=base_url()?>assets/assets/images/our-services/pic1.jpg" alt="">
-								</div>
-								<div class="info-bx text-center">
-									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-bank text-primary"></i>
-									</div>
-									<h4><a href="#">Best Industry Leaders</a></h4>
-									<a href="#" class="btn radius-xl">View More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="service-bx">
-								<div class="action-box">
-									<img src="<?=base_url()?>assets/assets/images/our-services/pic2.jpg" alt="">
-								</div>
-								<div class="info-bx text-center">
-									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-book text-primary"></i>
-									</div>
-									<h4><a href="#">Learn Courses Online</a></h4>
-									<a href="#" class="btn radius-xl">View More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-12">
-							<div class="service-bx m-b0">
-								<div class="action-box">
-									<img src="<?=base_url()?>assets/assets/images/our-services/pic3.jpg" alt="">
-								</div>
-								<div class="info-bx text-center">
-									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-file-text-o text-primary"></i>
-									</div>
-									<h4><a href="#">Book Library & Store</a></h4>
-									<a href="#" class="btn radius-xl">View More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-            </div> -->
-				<!-- Our Services END -->
-
 				<!-- Recent News -->
 				<div class="section-area section-sp2">
 					<div class="container">
@@ -347,8 +271,11 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-md-8">										
 										<div class="recent-news">
+											<div class="action-box">
+												<img src="<?=base_url()?>assets/img/spanduk_pendaftaran2_1.jpg" alt="">
+											</div>
 											<div class="info-bx">
 												<h5 class="post-title"><a href="#">Pendaftaran Mahasiswa
 														Baru</a></h5>
@@ -357,14 +284,10 @@
 													Pendaftaran Mahasiswa Baru STIMIK Sepuluh Nopember Jayapura tahun
 													ajaran 2021/2022 telah dibuka, anda dapat mengunjungi loket
 													pendaftaran yang ada di Kampus kami atau dapat mengakses pendaftaran
-													<a href="" class="btn-link" style="color: rgb(2, 137, 248)">PMB</a>,
+													<a href="<?=base_url('pendaftaran/form')?>" class="btn-link" style="color: rgb(2, 137, 248)" target="_blank">PMB</a>,
 													untuk keterangan lebih lanjut. Anda juga dapat menghubungi melalui
-													line telepon 0811111111 untuk mendapatkan informasi tentang
+													line telepon <strong>082289829777</strong> untuk mendapatkan informasi tentang
 													pendaftaran.</p>
-												<div class="post-extra">
-													<a href="#" class="btn-link">READ MORE</a>
-													<!-- <a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>20 Comment</a> -->
-												</div>
 											</div>
 										</div>
 									</div>
@@ -405,44 +328,6 @@ echo $this->mylib->hariIndo(date_format($data, "l")) . ', ' . date_format($data,
 								</div>
 							</div>
 							<?php endforeach;?>
-							<!-- <div class="item">
-							<div class="recent-news">
-								<div class="action-box">
-									<img src="<?=base_url()?>assets/assets/images/blog/latest-blog/pic2.jpg" alt="">
-								</div>
-								<div class="info-bx">
-									<ul class="media-post">
-										<li><a href="#"><i class="fa fa-calendar"></i>Feb 05 2019</a></li>
-										<li><a href="#"><i class="fa fa-user"></i>By John</a></li>
-									</ul>
-									<h5 class="post-title"><a href="blog-details.html">What Will Education Be Like In The Next 50 Years?</a></h5>
-									<p>As desperate as you are right now, you have done everything you can on your.</p>
-									<div class="post-extra">
-										<a href="#" class="btn-link">READ MORE</a>
-										<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>14 Comment</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="recent-news">
-								<div class="action-box">
-									<img src="<?=base_url()?>assets/assets/images/blog/latest-blog/pic3.jpg" alt="">
-								</div>
-								<div class="info-bx">
-									<ul class="media-post">
-										<li><a href="#"><i class="fa fa-calendar"></i>April 14 2019</a></li>
-										<li><a href="#"><i class="fa fa-user"></i>By George</a></li>
-									</ul>
-									<h5 class="post-title"><a href="blog-details.html">Master The Skills Of Education And Be.</a></h5>
-									<p>You will see in the guide all my years of valuable experience together with.</p>
-									<div class="post-extra">
-										<a href="#" class="btn-link">READ MORE</a>
-										<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>23 Comment</a>
-									</div>
-								</div>
-							</div>
-						</div> -->
 						</div>
 					</div>
 				</div>
@@ -458,50 +343,76 @@ echo $this->mylib->hariIndo(date_format($data, "l")) . ', ' . date_format($data,
 							</div>
 						</div>
 						<div class="row">
-							<!-- <div
-								class="upcoming-event-carousel owl-carousel owl-btn-center-lr owl-btn-1 col-12 p-lr0  m-b30">
-								<div class="item">
-									<div class="event-bx">
-										<div class="action-box">
-											<img src="<?=base_url()?>assets/assets/images/event/pic4.jpg" alt="">
-										</div>
-										<div class="info-bx d-flex">
-											<div>
-												<div class="event-time">
-													<div class="event-date">29</div>
-													<div class="event-month">October</div>
-												</div>
-											</div>
-											<div class="event-info">
-												<h4 class="event-title" style="color:white"><a href="#">Education Autumn
-														Tour 2019</a></h4>
-												<ul class="media-post">
-													<li><a href="#" style="color:white"><i class="fa fa-clock-o"></i>
-															7:00am 8:00am</a></li>
-													<li><a href="#" style="color:white"><i class="fa fa-map-marker"></i>
-															Berlin, Germany</a></li>
-												</ul>
-												<p style="color:white">Lorem Ipsum is simply dummy text of the printing
-													and typesetting industry. Lorem Ipsum has been the industry's
-													standard dummy text ever since the..</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> -->
+
 						</div>
 						<div class="text-center">
 							<a href="#" class="btn">View All Event</a>
 						</div>
 					</div>
 				</div>
-				<!-- Testimonials END -->
-
+				
+				<div class="section-area section-sp2">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 heading-bx left">
+								<h2 class="title-head">Our Gallery</h2>
+								<div class="widget widget_gallery gallery-grid-4">
+									<ul  class="magnific-image">
+											<!-- <?php foreach ($galery as $key => $value): ?>
+												<li><a href="<?=base_url() . 'assets/images/Galeri/' . $value['gambar']?>" class="magnific-anchor"><img
+												src="<?=base_url() . 'assets/images/Galeri/' . $value['gambar']?>" alt=""></a></li>
+												<?php endforeach;?> -->
+											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic2.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/assets/images/gallery/pic2.jpg" alt=""></a></li>
+											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic3.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/assets/images/gallery/pic3.jpg" alt=""></a></li>
+											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic4.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/assets/images/gallery/pic4.jpg" alt=""></a></li>
+											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic5.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/assets/images/gallery/pic5.jpg" alt=""></a></li>
+											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic6.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/assets/images/gallery/pic6.jpg" alt=""></a></li>
+											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic7.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/assets/images/gallery/pic7.jpg" alt=""></a></li>
+											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" alt=""></a></li>
+											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" alt=""></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Testimonials END -->
+					<div class="section-area section-sp2" style="padding-bottom: 0px;">
+						<div class="">
+							<div class="row">
+								<div class="col-md-12 text-center heading-bx">
+								<a href="<?=base_url()?>assets/img/Coris.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/img/Coris.jpg" alt="" width="10%"></a>
+								<a href="<?=base_url()?>assets/img/gunadarma.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/img/gunadarma.jpg" alt="" width="10%"></a>
+								<a href="<?=base_url()?>assets/img/binuss.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/img/binuss.jpg" alt="" width="10%"></a>
+								<a href="<?=base_url()?>assets/img/amikom.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/img/amikom.jpg" alt="" width="10%"></a>
+								<a href="<?=base_url()?>assets/img/BMKG.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/img/BMKG.jpg" alt="" width="10%"></a>
+								<a href="<?=base_url()?>assets/img/Pura.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/img/Pura.jpg" alt="" width="10%"></a>
+								<a href="<?=base_url()?>assets/img/Unisda.jpg" class="magnific-anchor"><img
+											src="<?=base_url()?>assets/img/Unisda.jpg" alt="" width="10%"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- contact area END -->
 			</div>
-			<!-- contact area END -->
-		</div>
-		<!-- Content END-->
-		<!-- Footer ==== -->
+			<!-- Content END-->
+			<!-- Footer ==== -->
 		<footer>
 			<div class="footer-top">
 				<!-- <div class="pt-exebar"> -->
@@ -524,19 +435,12 @@ echo $this->mylib->hariIndo(date_format($data, "l")) . ', ' . date_format($data,
 							</ul>
 						</div>
 						<div class="pt-btn-join">
-							<a href="#" class="btn ">Join Now</a>
+							<a href="<?=base_url('pendaftaran/form')?>" target="_blank" class="btn ">Join Now</a>
 						</div>
 					</div>
 				</div>
 				<!-- </div> -->
 			</div>
-			<!-- <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center"> <a target="_blank" href="https://www.templateshub.net">Templates Hub</a></div>
-                </div>
-            </div>
-        </div> -->
 		</footer>
 		<!-- Footer END ==== -->
 		<button class="back-to-top fa fa-chevron-up"></button>

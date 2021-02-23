@@ -37,6 +37,24 @@ class Content extends CI_Controller
                 $content['url'] = 'assets/images/Tentang/' . $data['data']['gambar'];
                 $this->load->view('template/content', $content);
                 break;
+            case 'visimisi':
+                $this->load->model('admin/Model_tentang', 'ModelTentang');
+                $data['data'] = $this->ModelTentang->getdata(['id' => 2])->row_array();
+                $content['content'] = $this->load->view('content/visimisi', $data, true);
+                $content['judul'] = 'Visi, Misi dan Tujuan ';
+                $content['breadcrumb'] = 'Tentang';
+                $content['url'] = 'assets/images/Tentang/' . $data['data']['gambar'];
+                $this->load->view('template/content', $content);
+                break;
+            case 'struktur':
+                $this->load->model('admin/Model_tentang', 'ModelTentang');
+                $data['data'] = $this->ModelTentang->getdata(['id' => 2])->row_array();
+                $content['content'] = $this->load->view('content/struktur', $data, true);
+                $content['judul'] = 'Struktur Organisasi';
+                $content['breadcrumb'] = 'Tentang';
+                $content['url'] = 'assets/images/Tentang/' . $data['data']['gambar'];
+                $this->load->view('template/content', $content);
+                break;
             default:
                 $data['data'] = $this->BeritaModel->getdata(['id' => $set['id']])->row_array();
                 $content['content'] = $this->load->view('content/berita', $data, true);

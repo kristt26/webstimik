@@ -54,7 +54,7 @@
 	<div id="loading-icon-bx"></div>
 	<div class="account-form">
 		<div class="account-head" style="background-image:url(<?=base_url()?>assets/assets/images/background/bg2.jpg);">
-			<a href="index.html"><img src="<?=base_url()?>assets/assets/images/logo-white-2.png" alt=""></a>
+			<a href="<?=base_url()?>"><img src="<?=base_url()?>assets/img/stimik.png" alt=""></a>
 		</div>
 		<div class="account-form-inner">
 			<div class="account-container">

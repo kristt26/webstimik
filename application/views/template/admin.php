@@ -65,7 +65,7 @@
 <body class="ttr-opened-sidebar ttr-pinned-sidebar">
 	<?php
 if (!$this->session->userdata('islogin')) {
-    redirect('login');
+    redirect('/login');
 }
 ?>
 	<!-- header start -->
@@ -80,9 +80,9 @@ if (!$this->session->userdata('islogin')) {
 			<!--logo start -->
 			<div class="ttr-logo-box">
 				<div>
-					<a href="index.html" class="ttr-logo">
+					<a href="<?=base_url()?>" class="ttr-logo">
 						<img class="ttr-logo-mobile" alt="" src="<?=base_url()?>assets/admin/assets/images/logo-mobile.png" width="30" height="30">
-						<img class="ttr-logo-desktop" alt="" src="<?=base_url()?>assets/admin/assets/images/logo-white.png" width="160" height="27">
+						<img class="ttr-logo-desktop" alt="" src="<?=base_url()?>assets/img/stimik.png" width="160" height="27">
 					</a>
 				</div>
 			</div>
@@ -248,8 +248,8 @@ if (!$this->session->userdata('islogin')) {
 	<div class="ttr-sidebar">
 		<div class="ttr-sidebar-wrapper content-scroll">
 			<!-- side menu logo start -->
-			<div class="ttr-sidebar-logo">
-				<a href="#"><img alt="" src="<?=base_url()?>assets/admin/assets/images/logo.png" width="122" height="27"></a>
+			<div class="ttr-sidebar-logo" style="background: maroon">
+				<a href="<?=base_url()?>"><img alt="" src="<?=base_url()?>assets/img/stimik.png" width="122" height="27"></a>
 				<!-- <div class="ttr-sidebar-pin-button" title="Pin/Unpin Menu">
 					<i class="material-icons ttr-fixed-icon">gps_fixed</i>
 					<i class="material-icons ttr-not-fixed-icon">gps_not_fixed</i>
