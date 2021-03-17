@@ -580,6 +580,7 @@ echo $this->mylib->hariIndo(date_format($data, "l")) . ', ' . date_format($data,
 		src="<?=base_url()?>assets/assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 	<script
 		src="<?=base_url()?>assets/assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="//code.tidio.co/5ciunhttzddpibu95sqhq6od9jrkw8gg.js" async></script>
 	<script>
 		jQuery(document).ready(function () {
 			var ttrevapi;
