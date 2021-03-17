@@ -12,7 +12,7 @@ class Model_user extends CI_Model
             if ($user['level'] == "admin") {
                 $user['islogin'] = true;
                 $this->session->set_userdata($user);
-                redirect('admin/home_admin');
+                redirect('admin/home');
             } else {
                 $user['islogin'] = true;
                 $this->session->set_userdata($user);

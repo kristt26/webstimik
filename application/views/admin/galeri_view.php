@@ -6,38 +6,49 @@ if(!empty($info))
 }
 ?>
 
-<div class="panel panel-default">
-                        <div class="panel-heading">
-                             <a href="<?php echo base_url().'index.php/admin/galeri/tambahData'; ?>" class="btn btn-lg btn-success btn-block">Tambah Data</a>
-                        </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Judul</th>
-                                            <th>Isi</th>
-                                            <th>Gambar</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    	<?php $no=1; foreach ($data->result() as $row): ?>
-                                        <tr class="odd gradeX">
-                                            <td><?php echo $no++; ?></td>
-                                            <td><?php echo $row->judul; ?></td>
-                                            <td><?php echo $row->isi; ?></td>
-                                            <td class="center"><?php echo $row->gambar; ?></td>
-                                            <td class="center">
-                                            <a href="<?php echo base_url().'index.php/admin/galeri/editData/'.$row->id; ?>">Edit</a>&nbsp;|&nbsp;
-                                            <a href="<?php echo base_url().'index.php/admin/galeri/delete/'.$row->id; ?>">Delete</a>
-                                            </td>
-                                        </tr>
-                                        <?php endforeach; ?>
-                                    </tbody>
-                                </table>
-                            </div>
+<div class="panel panel-default" ng-controller="galeryController">
+    <div class="panel-heading">
+        <a href="<?php echo base_url().'index.php/admin/galeri/tambahData'; ?>"
+            class="btn btn-lg btn-success btn-block">Tambah Data</a>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>Isi</th>
+                        <th>Gambar</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php $no=1; foreach ($data->result() as $row): ?>
+                    <tr class="odd gradeX">
+                        <td>
+                            <?php echo $no++; ?>
+                        </td>
+                        <td>
+                            <?php echo $row->judul; ?>
+                        </td>
+                        <td>
+                            <?php echo $row->isi; ?>
+                        </td>
+                        <td class="center">
+                            <img src="<?= base_url().'assets/images/Galeri/'. $row->gambar; ?>" alt="" width="200px">
                             
-                        </div>
-                    </div>
+                        </td>
+                        <td class="center">
+                            <a
+                                href="<?php echo base_url().'index.php/admin/galeri/editData/'.$row->id; ?>">Edit</a>&nbsp;|&nbsp;
+                            <a href="<?php echo base_url().'index.php/admin/galeri/delete/'.$row->id; ?>">Delete</a>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

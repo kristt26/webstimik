@@ -19,26 +19,17 @@
 		                </a>
 		            </li>
 					<li>
-						<a href="courses.html" class="ttr-material-button">
-							<span class="ttr-icon"><i class="ti-book"></i></span>
-		                	<span class="ttr-label">Courses</span>
-		                </a>
-		            </li>
-					<li>
 						<a href="#" class="ttr-material-button">
-							<span class="ttr-icon"><i class="ti-email"></i></span>
-		                	<span class="ttr-label">Mailbox</span>
+							<span class="ttr-icon"><i class="ti-folder"></i></span>
+		                	<span class="ttr-label">Galery</span>
 		                	<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
 		                </a>
 		                <ul>
 		                	<li>
-		                		<a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Mail Box</span></a>
+		                		<a href="<?=base_url('admin/galeri')?>" class="ttr-material-button"><span class="ttr-label">Photo</span></a>
 		                	</li>
 		                	<li>
-		                		<a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Compose</span></a>
-		                	</li>
-							<li>
-		                		<a href="mailbox-read.html" class="ttr-material-button"><span class="ttr-label">Mail Read</span></a>
+		                		<a href="<?=base_url('admin/video')?>" class="ttr-material-button"><span class="ttr-label">Video</span></a>
 		                	</li>
 		                </ul>
 		            </li>

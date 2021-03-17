@@ -6,11 +6,20 @@ class Galeri extends CI_Controller {
 	public function index()
 	{ 
 		$this->model_security->getsecurity();
-		$isi['content'] = 'admin/galeri_view';
-		$isi['judul'] = 'galeri';
-		$isi['menu'] = 'admin/side_admin';
-		$isi['data'] = $this->db->get('galeri');
-		$this->load->view('admin/home_view',$isi);
+        $result['title'] = "Galery";
+        $result['breadcrumb'] = "Galery";
+        // $result['subtitle'] = "Testing";
+        $data['data'] = $this->db->get('galeri');
+        $result['content'] = $this->load->view('admin/galeri_view', $data, true);
+        $this->load->view('template/admin', $result);
+
+		
+		// $this->model_security->getsecurity();
+		// $isi['content'] = 'admin/galeri_view';
+		// $isi['judul'] = 'galeri';
+		// $isi['menu'] = 'admin/side_admin';
+		// $isi['data'] = $this->db->get('galeri');
+		// $this->load->view('admin/home_view',$isi);
 	}
 
 	public function tambahData()
