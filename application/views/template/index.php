@@ -271,7 +271,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-8">										
+									<div class="col-md-8">
 										<div class="recent-news">
 											<div class="action-box">
 												<img src="<?=base_url()?>assets/img/spanduk_pendaftaran2_1.jpg" alt="">
@@ -350,19 +350,19 @@ echo $this->mylib->hariIndo(date_format($data, "l")) . ', ' . date_format($data,
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="section-area section-sp2">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 heading-bx left">
-								<h2 class="title-head">Our Gallery</h2>
+								<h2 class="title-head">Our Galleryy</h2>
 								<div class="widget widget_gallery gallery-grid-4">
 									<ul  class="magnific-image">
-											<!-- <?php foreach ($galery as $key => $value): ?>
+											<?php foreach ($galeri as $key => $value): ?>
 												<li><a href="<?=base_url() . 'assets/images/Galeri/' . $value['gambar']?>" class="magnific-anchor"><img
 												src="<?=base_url() . 'assets/images/Galeri/' . $value['gambar']?>" alt=""></a></li>
-												<?php endforeach;?> -->
-											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic2.jpg" class="magnific-anchor"><img
+												<?php endforeach;?>
+											<!-- <li><a href="<?=base_url()?>assets/assets/images/gallery/pic2.jpg" class="magnific-anchor"><img
 											src="<?=base_url()?>assets/assets/images/gallery/pic2.jpg" alt=""></a></li>
 											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic3.jpg" class="magnific-anchor"><img
 											src="<?=base_url()?>assets/assets/images/gallery/pic3.jpg" alt=""></a></li>
@@ -377,7 +377,7 @@ echo $this->mylib->hariIndo(date_format($data, "l")) . ', ' . date_format($data,
 											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" class="magnific-anchor"><img
 											src="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" alt=""></a></li>
 											<li><a href="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" class="magnific-anchor"><img
-											src="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" alt=""></a></li>
+											src="<?=base_url()?>assets/assets/images/gallery/pic8.jpg" alt=""></a></li> -->
 										</ul>
 									</div>
 								</div>
@@ -407,7 +407,7 @@ echo $this->mylib->hariIndo(date_format($data, "l")) . ', ' . date_format($data,
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 				<!-- contact area END -->
 			</div>
