@@ -262,12 +262,10 @@
 												<h5 class="post-title"><a href="<?=base_url('content?set=sambutan')?>">Sambutan Ketua</a>
 												</h5>
 												<p style="text-align: justify; text-justify: inter-word;">
-													Assalamualaikum Warahmatullahi Wabarakatuh, Salam sejahtera buat kita semua <br> Puji syukur kami panjatkan kepada Tuhan Yang Maha Esa atas rahmat an
+													Assalamualaikum Warahmatullahi Wabarakatuh, Salam sejahtera buat kita semua <br> Puji syukur kami panjatkan kepada Tuhan Yang Maha Esa atas rahmat dan
 			karuniaNya. STIMIK Sepuluh Nopember Jayapura hadir di tanah Papua sebagai
 			wujud tanggung jawab dan kepedulian kami dalam menyiapkan generasi anak
-			bangsa yang berkualitas khususnya anak-anak Papua untuk membangun dan
-			mengembangkan Papua menjadi salah satu Provinsi yang memiliki keunggulan di
-			bidang teknologi Informasi dan Komputer...</p>
+			bangsa yang berkualitas khususnya anak-anak Papua ...</p>
 												<div class="post-extra">
 													<a href="<?=base_url('content?set=sambutan')?>" class="btn-link">Continue Reading</a>
 													<!-- <a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>20 Comment</a> -->
