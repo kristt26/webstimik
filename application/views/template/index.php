@@ -262,8 +262,7 @@
 												<h5 class="post-title"><a href="<?=base_url('content?set=sambutan')?>">Sambutan Ketua</a>
 												</h5>
 												<p style="text-align: justify; text-justify: inter-word;">
-													Assalamualaikum Warahmatullahi Wabarakatuh, Salam sejahtera buat
-													kita semua...</p>
+													Assalamualaikum Warahmatullahi Wabarakatuh, Salam sejahtera buat kita semua...</p>
 												<div class="post-extra">
 													<a href="<?=base_url('content?set=sambutan')?>" class="btn-link">Continue Reading</a>
 													<!-- <a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>20 Comment</a> -->
@@ -274,10 +273,10 @@
 									<div class="col-md-8">
 										<div class="recent-news">
 											<div class="action-box">
-												<img src="<?=base_url()?>assets/img/pmb1.jpeg" alt="">
+												<img src="<?=base_url()?>assets/img/pmb1.jpeg" alt="" style="height: 90%">
 											</div>
 											<div class="info-bx">
-												<h5 class="post-title"><a href="#">Pendaftaran Mahasiswa
+												<h5 class="post-title"><a href="<?=base_url('pendaftaran/form')?>">Pendaftaran Mahasiswa
 														Baru</a></h5>
 												<p
 													style="max-width: 1000px; text-align: justify; text-justify: inter-word;">
