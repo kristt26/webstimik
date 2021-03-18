@@ -274,7 +274,7 @@
 									<div class="col-md-8">
 										<div class="recent-news">
 											<div class="action-box">
-												<img src="<?=base_url()?>assets/img/pmb1.jpg" alt="">
+												<img src="<?=base_url()?>assets/img/pmb1.jpeg" alt="">
 											</div>
 											<div class="info-bx">
 												<h5 class="post-title"><a href="#">Pendaftaran Mahasiswa
