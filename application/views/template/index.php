@@ -263,9 +263,7 @@
 												</h5>
 												<p style="text-align: justify; text-justify: inter-word;">
 													Assalamualaikum Warahmatullahi Wabarakatuh, Salam sejahtera buat kita semua <br> Puji syukur kami panjatkan kepada Tuhan Yang Maha Esa atas rahmat dan
-			karuniaNya. STIMIK Sepuluh Nopember Jayapura hadir di tanah Papua sebagai
-			wujud tanggung jawab dan kepedulian kami dalam menyiapkan generasi anak
-			bangsa yang berkualitas khususnya anak-anak Papua ...</p>
+			karuniaNya. STIMIK Sepuluh Nopember Jayapura ...</p>
 												<div class="post-extra">
 													<a href="<?=base_url('content?set=sambutan')?>" class="btn-link">Continue Reading</a>
 													<!-- <a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>20 Comment</a> -->
